@@ -1,0 +1,165 @@
+/* Originales dados */
+@media only screen and (min-width: 720px)  
+{
+	
+	#mydiv 
+	{
+		/* position:absolute;   */
+		/* top: 5%;  */ 
+		/* left: 35%; */
+		display: block;
+		margin: 0 auto;
+		max-width: 800px;
+	}
+	
+    #locationField, #controls 
+	{
+        position: relative;
+        width: 100%;
+    }
+	#locationField 
+	{
+		height: 20%;
+        margin-bottom: 5%;
+    }
+	
+	#autocomplete 
+	{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 99%;
+    }
+      
+	#address 
+	{
+		width: 100%;
+       	border-radius: 13px 13px 13px 13px;
+		-moz-border-radius: 13px 13px 13px 13px;
+		-webkit-border-radius: 13px 13px 13px 13px;
+		
+		background-color: #d9d9d9;
+		
+		/* border: px solid #000000; */
+		
+		/*-webkit-box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
+		box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75); */
+		
+		font-size: 1em;
+		
+		font-family: 'Raleway', sans-serif;
+      }
+	  
+      .fullField 
+	  {
+        width: 95%;
+      }
+	  .wideField 
+	  {
+        width: 70%;
+      }
+      .field 
+	  {
+        width: 50%;
+      }
+	  .mediumField 
+	  {
+        width: 35%;
+      }
+	  .smallField 
+	  {
+        width: 25%;
+      }
+      .slimField 
+	  {
+        width: 15%;
+      }	
+}
+
+@media only screen and (max-width: 719px)  
+{
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr 
+	{
+		display: block; 
+		font-family: 'Raleway', sans-serif;
+	}
+	body
+	{
+		font-size: 1em;
+		font-family: 'Raleway', sans-serif;
+	}
+	#address {
+		background-color: #d9d9d9;
+	}
+	
+	#locationField 
+	{
+        margin-bottom: 5%;
+    }
+	
+	#autocomplete 
+	{
+        position: relative;
+        top: 12%;
+        left: 0%;
+        width: 99%;
+		font-size: 0.82em;
+    }
+	.fullField 
+	  {
+        width: 100%;
+      }
+	.wideField 
+	  {
+        width: 100%;
+      }
+      .field 
+	  {
+        width: 100%;
+      }
+	  .mediumField 
+	  {
+        width: 100%;
+      }
+	  .smallField 
+	  {
+        width: 100%;
+      }
+      .slimField 
+	  {
+        width: 100%;
+      }	
+	.boton-regresar  {
+		position: absolute;
+		top: 30px;
+		right: 15px;
+	}
+	
+}
+/* Custom styles */
+body {
+	font-family: 'Raleway', sans-serif;
+	color: #585858;
+}
+input {
+	border-radius: 5px;
+	border: 1px solid rgba(0,0,0,.3);
+	background-color: #fff;	
+	outline-color: #f47c2f;
+	font-size: 1em;
+}
+.boton-regresar {
+	font-size: 1.2em;
+	text-decoration: none;
+	color: #fff;
+	background-color: #f47c2f;
+	padding: 0.7em;
+	border-radius: 5px;
+}
+
+#address {
+	padding: .6em;
+}
+

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crear un usuario</title>
+</head>
+<body>
+	<h1>Crear un usuario</h1>
+	<form action='personal/crear' method='post'>
+		Usuario: <input type="text" name="usuario" value="">
+		<br>
+		Nombre: <input type="text" name="nombre" value="">
+		<br>
+		A Pat: <input type="text" name="a_pat" value="">
+		<br>
+		A Mat: <input type="text" name="a_mat" value="">
+		<br>
+		<input type="submit" value="Crear">
+	</form>
+</body>
+</html>
