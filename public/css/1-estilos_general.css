@@ -1,0 +1,238 @@
+/*@import url(http://fonts.googleapis.com/css?family=Noto Sans); */
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+/* 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	'Noto Sans', sans-serif;
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	'Noto Sans', sans-serif; */
+
+/*	@import url(http://fonts.googleapis.com/css?family=Open+Sans);	*/
+
+
+
+
+body{
+	background: #ffffff;
+
+}
+
+
+.Etiqueta{	/*	Estilo Para las etiquetas de los campos en las Capturas */
+	font-family: 'Noto Sans', sans-serif;  		/*	'Open Sans', sans-serif;	/*	Tipo de Letra */
+	font-size: 12px;	/* Tamaño de la Letra */
+	/*font-weight: bold;	/* Pone la Letra en BOLD */
+	color: #000080;		/* Color de la Letra Navy */
+	text-align: right;	/*	Alineacion de la Letra */
+	padding-right: 5px;	/*	Espacio de las Letras a la Derecha */
+	letter-spacing: 0.5pt;
+}
+
+.EtiRastreo{	/*	Estilo Para las etiquetas de los campos en las Capturas */
+	font-family: 'Noto Sans', sans-serif;  		/*	'Open Sans', sans-serif;	/*	Tipo de Letra */
+	font-size: 15px;	/* Tamaño de la Letra */
+	/*font-weight: bold;	/* Pone la Letra en BOLD */
+	color: #000080;		/* Color de la Letra Navy */
+	text-align: centeer;	/*	Alineacion de la Letra */
+	padding-right: 5px;	/*	Espacio de las Letras a la Derecha */
+	letter-spacing: 0.5pt;
+}
+.Datos_Pantalla{
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 13px;
+	letter-spacing: 0.5pt;
+	text-align: center;
+	border: 0.5pt;
+	border-style: inset;
+	background: #ffffff;
+	border-radius: 4pt;	
+}
+
+
+
+
+input{	/*Esta Parte afectara a Todos los Campos Input	*/	
+	font-family: 'Noto Sans', sans-serif;	/*	Tipo de Letra */
+	font-size: 12px;	/* Tamaño de la Letra */
+	/*font-weight: bold;	/* Pone la Letra en BOLD */
+	color: #4682B4;		/* Color de la Letra SteelBlue	*/
+	text-align: left;	/*	Alineacion de la Letra */
+	border-radius: 4px;	/*	Redondea las Esquinas del input	*/
+	padding-left: 5px;	/*	Pone Espacios en blanco a la Izquierda	*/
+	letter-spacing: 0.5pt;	/*	Espaciado entre Caracteres	*/
+	height: 17px;
+
+}
+
+select{	/*Esta Parte afectara a Todos los Campos Select	*/	
+	font-family: 'Noto Sans', sans-serif;	/*	Tipo de Letra */
+	font-size: 12px;	/* Tamaño de la Letra */
+	/*font-weight: bold;	/* Pone la Letra en BOLD */
+	color: #4682B4;		/* Color de la Letra SteelBlue	*/
+	text-align: left;	/*	Alineacion de la Letra */
+	border-radius: 4px;	/*	Redondea las Esquinas del input	*/
+	padding-left: 5px;	/*	Pone Espacios en blanco a la Izquierda	*/
+	letter-spacing: 0.5pt;
+    height: 23px;
+
+}
+
+
+.Fondo_Tabla{
+	background: #eaeaea;  /* #fdb79b; */
+}
+
+.Titulo_Tabla{	/*	Este lo utilizo para los titulos de la pantalla	*/	
+	font-family: 'Noto Sans', sans-serif;	/*	Tipo de Letra */
+	font-size: 15px;	/* Tamaño de la Letra */
+	font-weight: bold;	/* Pone la Letra en BOLD */
+	color: #ffffff;		/* Color de la Letra Blanca	*/
+	text-align: center;	/*	Alineacion de la Letra */
+	background: #FA4C06;
+	letter-spacing: 2pt;
+}
+
+.SubTitulos{ 	/*	Este lo utilizo para los subtitulos o divisores de la pantalla	*/		
+	font-family: 'Noto Sans', sans-serif;	/*	Tipo de Letra */
+	font-size: 12px;	/* Tamaño de la Letra */
+	/*font-weight: bold;
+	font-style: italic;*/
+	color: #ffffff;		/* Color de la Letra Blanca	*/
+	text-align: center;	/*	Alineacion de la Letra */
+	background: #fc9369;	/*	Este es el color del Fondo */
+	letter-spacing: 2pt;	/*	Este es el Espaciado de las letter-spacing: */	
+}
+
+
+.Titulos_Tablas{	/*	Este se utiliza para los titulos de las columnas de una tabla */
+	font-family: 'Noto Sans', sans-serif;	/*	Tipo de Letra */
+	font-size: 12px;
+	text-align:  center;
+}
+
+
+
+.Datos_Tablas{
+	font-family: 'Noto Sans', sans-serif;	/*	Tipo de Letra */
+	font-size: 11px;
+	background: #ffffff;
+
+}
+
+.Boton {
+	font-family: 'Noto Sans', sans-serif;
+	background-color:  #FA4C06 ; /* Color del Fondo del Boton*/
+    border-radius: 5px;	/*	Redondeo de las Esquinas */
+    /*border: none;*/
+    border-color: #FA4C06;
+    color: #FFFFFF;		/*	Color de la Letra	*/
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 1pt;
+	height: 30px;
+	width: 200px;
+    text-align: center;
+
+}
+
+.Boton:hover { /* Efectos del Boton */
+    font-family: 'Noto Sans', sans-serif;	
+    background: #ffffff;
+    border-color: #FA4C06;
+    color: #FA4C06;
+    font-size: 15px;
+    font-weight: bold;
+    transition: .4s;
+}
+
+.Boton_Flaco {
+	font-family: 'Noto Sans', sans-serif;
+	background-color:  #FA4C06 ; /* Color del Fondo del Boton*/
+    border-radius: 5px;	/*	Redondeo de las Esquinas */
+    /*border: none;*/
+    border-color: #FA4C06;
+    color: #FFFFFF;		/*	Color de la Letra	*/
+    cursor: pointer;
+    font-size: 12px;
+    letter-spacing: 1pt;
+	height: 23px;
+	width: 150px;
+    text-align: center;
+
+}
+
+.Boton_Flaco:hover { /* Efectos del Boton */
+    font-family: 'Noto Sans', sans-serif;
+    background: #ffffff;
+    border-color: #FA4C06;
+    color: #FA4C06;
+    font-size: 10px;
+    font-weight: bold;
+    transition: .4s;
+}
+
+.Boton_Flaco_Largo {
+	font-family: 'Noto Sans', sans-serif;
+	background-color:  #FA4C06 ; /* Color del Fondo del Boton*/
+    border-radius: 5px;	/*	Redondeo de las Esquinas */
+    /*border: none;*/
+    border-color: #FA4C06;
+    color: #FFFFFF;		/*	Color de la Letra	*/
+    cursor: pointer;
+    font-size: 12px;
+    letter-spacing: 1pt;
+	height: 23px;
+	width: 400px;
+    text-align: center;
+
+}
+
+.Boton_Flaco_Largo:hover { /* Efectos del Boton */
+    font-family: 'Noto Sans', sans-serif;
+    background: #ffffff;
+    border-color: #FA4C06;
+    color: #FA4C06;
+    font-size: 10px;
+    font-weight: bold;
+    transition: .4s;
+}
+
+.Boton_Mediano {
+	font-family: 'Noto Sans', sans-serif;
+	background-color:  #FA4C06 ; /* Color del Fondo del Boton*/
+    border-radius: 5px;	/*	Redondeo de las Esquinas */
+    /*border: none;*/
+    border-color: #FA4C06;
+    color: #FFFFFF;		/*	Color de la Letra	*/
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 1pt;
+	height: 30px;
+	width: 100px;
+    text-align: center;
+
+}
+
+.Boton_Mediano:hover { /* Efectos del Boton */
+    font-family: 'Noto Sans', sans-serif;
+    background: #ffffff;
+    border-color: #FA4C06;
+    color: #FA4C06;
+    font-size: 15px;
+    font-weight: bold;
+    transition: .4s;
+}
+
+
+textarea{			/*	Se encarda del formato de los Campos TextArea	*/	
+	padding-left: 10px;
+	font-family: 'Noto Sans', sans-serif;	/*	Tipo de Letra */
+	letter-spacing: 0.5pt;
+	text-transform:uppercase;   
+	font-size: 12px;
+	color: #4682B4;		/* Color de la Letra SteelBlue	*/
+	border-radius: 5px;
+	resize:none;
+}
+
+
