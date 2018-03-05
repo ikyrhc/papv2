@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Tb_personal;
 
 class Tb_personalController extends Controller
 {
@@ -13,8 +14,11 @@ class Tb_personalController extends Controller
      */
     public function index()
     {
-        $personal = Tb_personalController::latest()->paginate(5);
-        return view('cuerpo',compact('articles'));
+        //$articles = Article::latest()->paginate(5);
+		//$personales = Tb_personalController::latest();
+		$personales = Tb_personal::all();
+		
+        return view('usuarios',compact('personales'));
             //->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
@@ -25,7 +29,7 @@ class Tb_personalController extends Controller
      */
     public function create()
     {
-        //
+        return view('usuariosA');
     }
 
     /**
@@ -36,7 +40,16 @@ class Tb_personalController extends Controller
      */
     public function store(Request $request)
     {
-        //
+     //
+		$this->validate($request, [
+        'usuario' => 'required|min:3',
+        'nom' => 'required|min:3',
+        'a_pat' => 'required',
+		'a_mat' => 'required'
+    ]);
+
+    Tb_personal::create($request->all());
+    return redirect('personal');
     }
 
     /**

@@ -13,7 +13,7 @@ class CreateTbTrackTable extends Migration
      */
     public function up()
     {
-        Schema::create('tb_track', function (Blueprint $table) {
+        Schema::create('tb_tracks', function (Blueprint $table) {
             $table->increments('id');
             $table->string('usuario', 15)->comment('Usuario que Realiza la operacion');
             $table->date('fecha')->comment('Fecha en Que se Realiza La Transaccion');
@@ -33,6 +33,6 @@ class CreateTbTrackTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tb_track');
+        Schema::dropIfExists('tb_tracks');
     }
 }

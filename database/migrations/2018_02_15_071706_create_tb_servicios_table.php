@@ -89,6 +89,7 @@ class CreateTbServiciosTable extends Migration
             $table->tinyInteger('recole')->comment('Marca si fue Recoleccion');
             $table->date('fe_recole')->comment('Fecha de la Recoleccion');
             $table->time('hr_recole')->comment('Hora de la Recoleccion');
+            $table->string('tpo_guia')->default('0')->comment('controla cuando son guias express 0 y guias masivas 1');
             $table->timestamps();
         });
     }

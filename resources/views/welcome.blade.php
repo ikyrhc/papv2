@@ -2,7 +2,7 @@
 <html lang="{{ app()->getLocale() }}">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
@@ -30,7 +30,7 @@
               justify-content: center;
               padding-top: 40px;
               padding-bottom: 40px;
-              background-color: #eaeaea;
+              background-color: #ffffff;
             }
 
             .form-signin {
@@ -66,7 +66,8 @@
 <body class="text-center">
     <form class="form-signin" >
         <!-- Logotipo de la Mensajeria -->
-        <img class="mb-4" src="img/pap.png" alt="" width="300" height="150">
+        <img class="mb-4" src="img/pap.png" alt="" >
+        <!-- width="300" height="150" -->
                
         <h1 class="h3 mb-3 font-weight-normal">Por Favor, Ingrese Usuario</h1>
         

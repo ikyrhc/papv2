@@ -16,12 +16,11 @@ class GeneralController extends Controller
         return view('welcome');
     }
 
-    public function cuerpo(){
-        return view('cuerpo');
-        
-    }
+    //public function cuerpo(){
+    //    return view('cuerpo');
+    //}
 
     public function menu(){
-        return view('menu_general');
+        return view('inicio1');
     }
 }

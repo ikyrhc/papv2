@@ -1,4 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
@@ -29,9 +32,10 @@
 }
 #cssmenu {            /*    Fondo de Todo el Menu */
   width: 300;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif; 
+  letter-spacing: 0.5pt;
   line-height: 1;
-  background: #eaeaea;        Este es el Color del fondo del Menu */
+  background: #ffffff;        Este es el Color del fondo del Menu */
 }
 #menu-line {
   position: absolute;
@@ -67,6 +71,7 @@
   text-align: right;
 }
 #cssmenu > ul > li > a {    /*    Esta parte se encarga de los menus sin seleccionar */
+  /*font-family: 'Raleway';*/
   padding: 20px;
   font-size: 13px;
   text-decoration: none;
@@ -140,8 +145,9 @@
   height: 32px;
 }
 #cssmenu ul ul li a {    /*    Esta Parte controla los submenus */
+  /*  font-family: 'Raleway'; */
   padding: 10px 20px;
-  width: 150px;    /*    Tamano del Contenedor del submenu */
+  width: 250px;    /*    Tamano del Contenedor del submenu */
   font-size: 12px;
   border-radius: 3px;    /*    Esta Linea le da efecto redondeado a los submenus */
   background: #fb8150;    /* este es el color del submenu */
@@ -154,11 +160,12 @@
   transition: color .2s ease;
 }
 #cssmenu ul ul ul li a {    /*    Esta Parte controla los submenus de los submenus */
+  /*  font-family: 'Raleway'; */
   padding: 10px 20px;
-  width: 300px;    /*    Tamano del Contenedor del submenu */
+  width: 250px;    /*    Tamano del Contenedor del submenu */
   font-size: 12px;
   border-radius: 3px;    /*    Esta Linea le da efecto redondeado a los submenus */
-  background: #fdb79b;    /* este es el color del submenu  */
+  background: #fb8150; /*  #fdb79b;    /* este es el color del submenu  */
   text-decoration: none;
   color: #ffffff;    /* este es el color de las letras del menu */
   -webkit-transition: color .2s ease;
@@ -172,7 +179,7 @@
 #cssmenu ul ul li a:hover {
     color: #FA4C06;             /* este es el color del texto cuano esta seleccionado el submenu */
     font-weight: bold;
-    background: #eaeaea;        /*    Cuando Esta Seleccionado el Submenu el fondo */
+    background: #ffffff;        /*    Cuando Esta Seleccionado el Submenu el fondo */
 }
 #cssmenu ul ul li.has-sub > a::after {
   position: absolute;
@@ -327,7 +334,7 @@
   #cssmenu .submenu-button.submenu-opened:after {
     display: none;
   }
-
+}
 
 .imagen { /*Este Controla la Imagen */
   
@@ -342,23 +349,21 @@
     }
 
 body {
-      display: -ms-flexbox;
-      display: -webkit-box;
-      display: flex;
-      -ms-flex-align: center;
-      -ms-flex-pack: center;
-      -webkit-box-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      justify-content: center;
-      padding-top: 3px;
-      padding-bottom: 3px;
-      background-color: #eaeaea;
+
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #ffffff;
     }
-    
-
-
-}
+ 
 
 
  

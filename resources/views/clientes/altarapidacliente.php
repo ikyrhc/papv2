@@ -17,7 +17,7 @@
 
 <body>
 	<form action="altarapidacliente_submit" method="get" accept-charset="utf-8">
-		<table width="500" align="center" border="0" cellpadding="5" cellspacing="0" bgcolor="#fdb79b"
+		<table width="500" align="center" border="0" cellpadding="5" cellspacing="0" class="Fondo_Tabla"
         	 style="border-bottom-left-radius:10px; border-bottom-right-radius: 10px; border-top-left-radius: 10px;
         	 border-top-right-radius: 10px">
 			<thead>
@@ -97,9 +97,9 @@
 			  	</tr>
               	<tr>
                 	<td width="150" nowrap="nowrap" class="Etiqueta">Tel. Oficina :</td>
-                    <td width="150" nowrap="nowrap" ><input type="text" name="tel_of" size="20" placeholder="55 5555 5555"/></td>
+                    <td width="150" nowrap="nowrap" ><input type="text" name="tel_of" size="20" placeholder="5555555555"/></td>
                 	<td width="150" nowrap="nowrap" class="Etiqueta">Tel. Of. 2 :</td>
-                	<td width="150" nowrap="nowrap" ><input type="text" name="tel_of_2" size="20" placeholder="55 5555 5555"/></td>
+                	<td width="150" nowrap="nowrap" ><input type="text" name="tel_of_2" size="20" placeholder="5555555555"/></td>
               	</tr>
                 <tr>
                     <td width="150" nowrap="nowrap" class="Etiqueta">Contacto :</td>
@@ -109,7 +109,7 @@
                 <tr>
                     <td width="150" class="Etiqueta">E-Mail Contacto :</td>
                     <td width="450" colspan="3">
-                    	<input type="text" name="p_email" size="72" placeholder="nombre@ejempo.com.mx"/>
+                    	<input type="text" name="p_email" size="72" placeholder="usuario@ejemplo.com.mx"/>
                     </td>
                 </tr>
 

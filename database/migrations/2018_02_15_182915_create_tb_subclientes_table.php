@@ -29,8 +29,8 @@ class CreateTbSubclientesTable extends Migration
             $table->string('cp', 5)->comment('Codigo Postal eb base a Ctl_CP');
             $table->string('tel_of', 13)->comment('Telefono de la Oficina del Cliente');
             $table->string('tel_of_2', 13)->nullable()->comment('Telefono Secundario del Cliente');
+            $table->string('tel_cel', 13)->nullable()->comment('Telefono Celular del Cliente');
             $table->string('fax', 13)->nullable()->comment('Numero de Fax del Cliente');
-            $table->string('email', 50)->comment('eMail de contacto del Cliente');
             $table->string('http', 50)->nullable()->comment('Pagina WEB del Cliente');
             $table->date('fe_reg')->comment('Fecha de Registro del Cliente');
             $table->string('estatus', 1)->default('1')->comment('Estatus del Cliente 1 Activo 0 Inactivo');
