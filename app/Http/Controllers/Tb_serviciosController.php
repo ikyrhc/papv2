@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Tb_personal;
 
-class Tb_personalController extends Controller
+class Tb_serviciosController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,12 +13,7 @@ class Tb_personalController extends Controller
      */
     public function index()
     {
-        //$personales = Tb_personal::latest()->paginate(4);
-		//$personales = Tb_personalController::latest();
-		$personales = Tb_personal::all();
-		
-        return view('usuario.listausuario',compact('personales'));
-            //->with('i', (request()->input('page', 1) - 1) * 5);
+        //
     }
 
     /**
@@ -29,7 +23,7 @@ class Tb_personalController extends Controller
      */
     public function create()
     {
-        return view('usuariosA');
+        //
     }
 
     /**
@@ -40,16 +34,7 @@ class Tb_personalController extends Controller
      */
     public function store(Request $request)
     {
-     //
-		$this->validate($request, [
-        'usuario' => 'required|min:3',
-        'nom' => 'required|min:3',
-        'a_pat' => 'required',
-		'a_mat' => 'required'
-    ]);
-
-    //Tb_personal::create($request->all());
-    //return redirect('personal');
+        //
     }
 
     /**

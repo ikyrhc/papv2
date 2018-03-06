@@ -1,19 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+@extends('layout')
 
+@section('title',"Alta de Personal")
 
+@section('content')	
 
-	<title>ALta de Usuarios</title>
-	<!-- Esta es la Referencia al Archivo de Estilos -->
-	<link rel="stylesheet" href="css/estilos_general.css">
-
-</head>
-<body>
-	<form action="altausuario_submit" method="get" accept-charset="utf-8">
+	<form action="altausuario_submit" method="post" accept-charset="utf-8">
+		@if ($message = Session::get('success'))
+			<div class="alert alert-success">
+				<p>{{ $message }}</p>
+			</div>
+		@endif
 
 	   <table width="1350" align="center" border="0" cellpadding="5" cellspacing="0" class="Fondo_Tabla" 
 			style="border-top-left-radius: 10px; border-top-right-radius: 10px">
@@ -254,14 +250,5 @@
 		        </tr>
 	        </tbody>
 	    </table>
-
-
-
-
-
-
-
-
 	</form>
-</body>
-</html>
+	@endsection

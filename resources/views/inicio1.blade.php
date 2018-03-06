@@ -3,7 +3,7 @@
 @section('title',"Mensajeria")
 
 @section('content')
-
+<div id="container1"> 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript">
     google.charts.load('current', {'packages':['gauge']});
@@ -118,4 +118,5 @@ var myChart = new Chart(ctx, {
     }
 });
 </script>
+</div>
 @endsection

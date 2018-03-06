@@ -21,6 +21,6 @@ class GeneralController extends Controller
     //}
 
     public function menu(){
-        return view('inicio1');
+        return view('cuerpo');
     }
 }

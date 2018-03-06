@@ -1,25 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layout')
+
+@section('title',"Alta Domicilios Frecuentes")
+
+@section('content')	
 
 
+@if ($message = Session::get('success'))
+		<div class="alert alert-success">
+			<p>{{ $message }}</p>
+		</div>
+	@endif
 
-	<title>Alta Domicilios Frecuentes</title>
-	<!-- Esta es la Referencia al Archivo de Estilos -->
-	<link rel="stylesheet" href="css/estilos_general.css">
-	<!-- Este Archivo nos da las funcionalidades de el Calendario -->
-	<script language="javascript" type="text/javascript" src="js/datetimepicker_css.js"></script>
-</head>
-
-
-
-
-<body>
 	<form action="altasubcliente_submit" method="get" accept-charset="utf-8">
-		<table width="900" align="center" border="0" cellpadding="5" cellspacing="0" bgcolor="#fdb79b"
+		<table width="900" align="center" border="0" cellpadding="5" cellspacing="0" class="Fondo_Tabla"
         	 style="border-bottom-left-radius:10px; border-bottom-right-radius: 10px; border-top-left-radius: 10px;
         	 border-top-right-radius: 10px">
 			<thead>
@@ -165,5 +158,4 @@
 			</tbody>
 		</table>
 	</form>
-</body>
-</html>
+	@endsection

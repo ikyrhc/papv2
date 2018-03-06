@@ -11,7 +11,7 @@
 		</div>
 	@endif
 
-	<table width="1000" align="center" cellpadding="7" border="0" cellspacing="0" bgcolor="#fdb79b"
+	<table width="1000" cellpadding="7" border="0" cellspacing="0" bgcolor="#fdb79b"
 				style="border-bottom-left-radius:10px; border-bottom-right-radius: 10px; border-top-left-radius: 10px;
 		        border-top-right-radius: 10px">
 		<tr>

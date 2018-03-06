@@ -1,22 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+@extends('layout')
 
+@section('title',"Consulta de Guía")
 
+@section('content')
 
-	<title>Consulta de Guías</title>
-	<!-- Esta es la Referencia al Archivo de Estilos -->
-	<link rel="stylesheet" href="css/estilos_general.css">
-
-</head>
-
-
-
-
-<body>
+	@if(count($errors) > 0)
+		<div class="errors">
+			<ul>
+			@foreach($errors->all() as $error)
+				<li>{{ $error }}</li>
+			@endforeach
+			</ul>
+		</div>
+	@endif
 	<form action="consultaguias_submit" method="get" accept-charset="utf-8">
 		<table width="1100" align="center" border="0" cellpadding="3" cellspacing="0" class="Fondo_Tabla" 
         	 style="border-bottom-left-radius:10px; border-bottom-right-radius: 10px; border-top-left-radius: 10px;
@@ -233,12 +229,11 @@
 				</tr>
 				<tr>
 					<td height="50" colspan="4" align="center">
-						<input class="Boton" name="bt_Salvar" type="button" value="Insertar Registro" /></td>
+						<!--<input class="Boton" name="bt_Salvar" type="button" value="Insertar Registro" /></td>-->
 					<td colspan="4" align="center">
 						<input class="Boton" type ='button' value = 'Regresar' /></td>
 				</tr>
 			</tbody>
 		</table>
 	</form>
-</body>
-</html>
+@endsection

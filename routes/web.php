@@ -22,7 +22,7 @@ Route::get('alta_cl', 'Tb_clientesController@create');
 Route::post('alta_cl/crear', 'Tb_clientesController@store');
 
 //rhc prueba de layout y de charts
-Route::get('inicio1', function(){
+Route::get('dash', function(){
     return view('inicio1');
 });
 
@@ -47,7 +47,7 @@ Route::get('blanco', function(){
 
 
 /*  rutas para el control de usuarios */
-Route::resource('personal','Tb_personalController');
+Route::resource('usu','Tb_personalController');
 
 Route::get('altausu', function(){
     return view('usuario.altausuario');
@@ -86,7 +86,7 @@ Route::resource('track','Tb_TrackController');
 
 
 /* esta ruta hay que eliminarla de el proyecto */
-Route::get('/usuarios', 'UserController@index');
+//Route::get('/usuarios', 'UserController@index');
 
 
 

@@ -23,12 +23,12 @@ class ClientesControl extends Controller
     
     public function alra_cl()
     {
-        return view('/clientes/altarapidacliente');
+        return view('clientes.altarapidacliente');
     }
     
     public function alsb_cl()
     {
-        return view('/clientes/altasubcliente');
+        return view('clientes.altasubcliente');
     }
     /**
      * Show the form for creating a new resource.

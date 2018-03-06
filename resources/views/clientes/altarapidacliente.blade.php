@@ -1,21 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layout')
+
+@section('title',"Alta Rapida de Clientes")
+
+@section('content')	
 
 
+@if ($message = Session::get('success'))
+		<div class="alert alert-success">
+			<p>{{ $message }}</p>
+		</div>
+	@endif
 
-	<title>Alta Rapida de Cliente</title>
-	<!-- Esta es la Referencia al Archivo de Estilos -->
-	<link rel="stylesheet" href="css/estilos_general.css">
-</head>
-
-
-
-
-<body>
 	<form action="altarapidacliente_submit" method="get" accept-charset="utf-8">
 		<table width="500" align="center" border="0" cellpadding="5" cellspacing="0" class="Fondo_Tabla"
         	 style="border-bottom-left-radius:10px; border-bottom-right-radius: 10px; border-top-left-radius: 10px;
@@ -145,10 +140,9 @@
 					<td width="300" height="50" colspan="2" align="center">
 						<input class="Boton" name="bt_Salvar" type="button" value="Insertar Registro" /></td>
 					<td width="300" height="50" align="center" colspan="2">
-						<input class="Boton" type ="button" onclick="{{ route('/menu') }}" value = 'Regresar' /></td>
+						<input class="Boton" type ="button" onclick="" value = 'Regresar' /></td>
 				</tr>
 			</tbody>
 		</table>
 	</form>
-</body>
-</html>
+@endsection

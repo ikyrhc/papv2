@@ -21,14 +21,14 @@
 </head>
 
 <body>
-
-<img src="img/pap.png" alt="No Hay Imagen" class="imagen" />
-
+<div>
+    <img src="img/pap.png" alt="No Hay Imagen" class="imagen" />
+</div>
 
 <div id='cssmenu'>
     
     <ul>
-    <li><a href='/c'>Dashboard</a></li>
+    <li><a href='/dash'>Dashboard</a></li>
     <li><a href='#'>Guías Express</a></li>
     <li><a href='#'>Guías Masivas</a></li>
     <li><a>Servicios</a>
@@ -66,7 +66,7 @@
             <li class='active has-sub'><a>Configuración</a></li>
             <li class='active has-sub'><a>Usuarios</a>
                 <ul>
-                    <li class='has-sub'><a href='/personal'>Directorio</a></li>
+                    <li class='has-sub'><a href='/usu'>Directorio</a></li>
                     <li class='has-sub'><a href='/altausu'>Alta</a></li>
                     <li class='has-sub'><a href='#'>Cambio</a></li>
                     <li class='has-sub'><a href='#'>Baja</a></li>
@@ -81,7 +81,7 @@
                     <li class='has-sub'><a href='#'>Baja</a></li>
                     <li class='has-sub'><a>SubClientes</a>
                         <ul>
-                            <li class='has-sub'><a href='/alsb_cl'>Directorio</a></li>
+                            <li class='has-sub'><a href='#'>Directorio</a></li>
                             <li class='has-sub'><a href='/alsb_cl'>Alta</a></li>
                             <li class='has-sub'><a>Cambio</a></li>
                             <li class='has-sub'><a>Baja</a></li>
@@ -103,9 +103,10 @@
     </ul>
 
 </div>
-<div id="container1">
+<!-- <div id="container1"> -->
     @yield('content')
-</div>
+<!--</div>--> 
+
 
 </body>
 <html>

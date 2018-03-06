@@ -60,7 +60,7 @@ input{	/*Esta Parte afectara a Todos los Campos Input	*/
 	border-radius: 4px;	/*	Redondea las Esquinas del input	*/
 	padding-left: 5px;	/*	Pone Espacios en blanco a la Izquierda	*/
 	letter-spacing: 0.5pt;	/*	Espaciado entre Caracteres	*/
-	height: 20px;
+	height: 25px;
 
 }
 

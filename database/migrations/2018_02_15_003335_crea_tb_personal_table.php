@@ -13,7 +13,7 @@ class CreaTbPersonalTable extends Migration
      */
     public function up()
     {
-        Schema::create('tb_personal', function(Blueprint $table)
+        Schema::create('tb_personals', function(Blueprint $table)
 		{
            $table->increments('id')->comment('Identificador Unico del Empleado Uso Interno');
             $table->string('usuario', 15)->unique()->comment('Clave Unica del Usuario');
@@ -26,11 +26,11 @@ class CreaTbPersonalTable extends Migration
             $table->string('nss', 30)->nullable()->comment('Numero de Seguro Social');
             $table->string('dom')->nullable()->comment('Domicilio del Empleado Calle');
             $table->string('no_int', 10)->nullable()->comment('No Interior del Domcilio');
-            $table->string('no_ext', 10)->comment('No Exterior del Domicilio');
+            $table->string('no_ext', 10)->nullable()->comment('No Exterior del Domicilio');
             $table->string('col', 150)->nullable()->comment('Colonia en base al Catalogo de CP');
             $table->string('mun', 150)->nullable()->comment('Municipio en base al catalogo de CP');
             $table->string('edo', 150)->nullable()->comment('Estado en Base al Catalogo de CP');
-            $table->string('ciu', 150)->comment('Ciudad en base a Ctl_CP');
+            $table->string('ciu', 150)->nullable()->comment('Ciudad en base a Ctl_CP');
             $table->string('cp', 5)->nullable()->comment('Codigo Postal en Base al Catalogo de CP');
             $table->string('tel_casa', 15)->nullable()->comment('Telefono de Casa Particular');
             $table->string('tel_casa_r', 15)->nullable()->comment('Telefono de Recados');
@@ -53,9 +53,9 @@ class CreaTbPersonalTable extends Migration
             $table->tinyInteger('doc_cest')->nullable()->comment('Comprobante de Estudios');
             $table->tinyInteger('doc_lic')->nullable()->comment('Licencia de Conducir');
             $table->tinyInteger('doc_cred_e')->nullable()->comment('Credencial de la Empresa');
-            $table->date('fe_ing')->comment('Fecha de Ingreso a la Empresa');
+            $table->date('fe_ing')->nullable()->comment('Fecha de Ingreso a la Empresa');
             $table->date('fe_baja')->nullable()->comment('Fecha de Baja o Separacion de la Empresa');
-            $table->string('estatus', 1)->comment('Estaus 1 Activo 0 Inactivo');
+            $table->string('estatus', 1)->default('1')->comment('Estaus 1 Activo 0 Inactivo');
             $table->longText('observa')->nullable()->comment('Observaciones Generales acerca del Empleado');
             $table->string('password',20)->nullable()->comment('Contrasena');
             $table->string('sede', 20)->nullable()->comment('Plaza Sede del Empleado');

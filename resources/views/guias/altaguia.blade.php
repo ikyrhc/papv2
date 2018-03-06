@@ -1,23 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+@extends('layout')
 
+@section('title',"Alta Nuevas Guías")
 
-	<title>Alta de Nuevas Guías</title>
-	<!-- Esta es la Referencia al Archivo de Estilos -->
-	<link rel="stylesheet" href="css/estilos_general.css">
-	<!-- Este Archivo nos da las funcionalidades de el Calendario -->
-	<script language="javascript" type="text/javascript" src="js/datetimepicker_css.js"></script>
-</head>
+@section('content')
 
+	@if(count($errors) > 0)
+		<div class="errors">
+			<ul>
+			@foreach($errors->all() as $error)
+				<li>{{ $error }}</li>
+			@endforeach
+			</ul>
+		</div>
+	@endif
 
-
-
-<body>
 	<form action="altaguias_submit" method="get" accept-charset="utf-8">
 		<table width="1000" align="center" border="0" cellpadding="3" cellspacing="0" class="Fondo_Tabla" 
         	 style="border-bottom-left-radius:10px; border-bottom-right-radius: 10px; border-top-left-radius: 10px;
@@ -334,5 +331,4 @@
 			</tbody>
 		</table>
 	</form>
-</body>
-</html>
+	@endsection
