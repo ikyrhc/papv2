@@ -26,6 +26,11 @@ Route::get('dash', function(){
     return view('inicio1');
 });
 
+Route::resource('cp1','Ctl_cpsController');
+Route::get('cp1/{cp}','Ctl_cpsController@getCps');
+
+//**************************************************************************************************************************
+
 
 //fasv
 Route::get('alra_cl', 'ClientesControl@alra_cl');
@@ -67,13 +72,21 @@ Route::get('rastreo', function(){
 
 /**		Rutas para Guias **/
 
+Route::resource('listguia', 'Tb_serviciosController');
+
+
 Route::get('alta_guia', function(){
     return view('guias.altaguia');
 });
 
-Route::get('consguia', function(){
-    return view('guias.consultaguia');
+Route::get('busca', function(){
+    return view('guias.busca');
 });
+
+Route::get('consguia/{os}', 'Tb_serviciosController@show')
+    ->Where('os')
+    ->name('guias.consultaguia');
+
 
 Route::get('hist', function(){
     return view('guias.consultahistorico');

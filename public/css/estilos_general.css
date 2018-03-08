@@ -28,6 +28,15 @@ body{
 	letter-spacing: 0.5pt;
 }
 
+.EtiCentro{	/*	Estilo Para las etiquetas de los campos en las Capturas */
+	font-family: 'Noto Sans', sans-serif;  		/*	'Open Sans', sans-serif;	/*	Tipo de Letra */
+	font-size: 12px;	/* Tamaño de la Letra */
+	/*font-weight: bold;	/* Pone la Letra en BOLD */
+	color: #000080;		/* Color de la Letra Navy */
+	text-align: center;	/*	Alineacion de la Letra */
+	letter-spacing: 0.5pt;
+}
+
 .EtiRastreo{	/*	Estilo Para las etiquetas de los campos en las Capturas */
 	font-family: 'Noto Sans', sans-serif;  		/*	'Open Sans', sans-serif;	/*	Tipo de Letra */
 	font-size: 15px;	/* Tamaño de la Letra */
@@ -235,4 +244,7 @@ textarea{			/*	Se encarda del formato de los Campos TextArea	*/
 	resize:none;
 }
 
+hr{
+	border-color: red;
+}
 

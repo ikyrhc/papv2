@@ -1,14 +1,19 @@
-@extends('layout')
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-@section('title',"Alta de Personal")
 
-@section('content')	
-	<form action="altausuario_submit" method="post" accept-charset="utf-8" onload="QuitarFoco();">
-		@if ($message = Session::get('success'))
-			<div class="alert alert-success">
-				<p>{{ $message }}</p>
-			</div>
-		@endif
+
+	<title>ALta de Usuarios</title>
+	<!-- Esta es la Referencia al Archivo de Estilos -->
+	<link rel="stylesheet" href="css/estilos_general.css">
+
+</head>
+<body>
+	<form action="altausuario_submit" method="get" accept-charset="utf-8">
 
 	   <table width="1350" align="center" border="0" cellpadding="5" cellspacing="0" class="Fondo_Tabla" 
 			style="border-top-left-radius: 10px; border-top-right-radius: 10px">
@@ -94,7 +99,7 @@
 		        </tr>
 		        <tr>
 		        	<td class="Etiqueta">C.P. :</td>
-		            <td><input type="text" name="cp" id="cp" size="6" placeholder="06600"  tabindex="0" onkeypress="validar(event)"/></td>
+		            <td><input type="text" name="cp" id="cp" size="6" placeholder="06600" /></td>
 					<td class="Etiqueta">Colonia :</td>
                     <td colspan="3">
                		  	<select name="col" id="col" tabindex="-1">
@@ -243,47 +248,20 @@
 				</tr>
 		        
 		        <tr>
-		            <td colspan="4" align="center">
-					<input class="Boton" name="submit" id="submit" type="button" value="Guardar Datos" /></td>
+		            <td colspan="4" align="center"><input class="Boton" name="submit" type="submit" value="Guardar Datos" /></td>
 		            <td colspan="1">&nbsp;</td>
-		            <td colspan="4" align="center">
-					<input class="Boton" name="submit2" id="submit2" type ='button' value = "Regresar" /></td>
+		            <td colspan="4" align="center"><input class="Boton" type ='button' value = "Regresar" /></td>
 		        </tr>
 	        </tbody>
 	    </table>
-	</form>
-	@endsection
-	
-	@section('scripts')
-	<script type="text/javascript">
-    
-	$(document).ready(function (){
-		//QuitarFoco();
-		//alert("documento listo");
-		$('.Boton').click(function ()
-		{
-			alert('boton llamado');
-		});
-		
-	});
-	
-	
-	function QuitarFoco()
-	{
-		elemento = document.getElementById("submit");
-		elemento.blur();
-		alert('ok')
-    }
-	
-	function validar(e) 
-	{
-		//con esta forma de codificacion se puede integrar a cualuier elemento que se quiera evaluar el enter, es universal cuidado!!
-		tecla = (document.all) ? e.keyCode : e.which;
-		if (tecla==13) alert ('Has pulsado enter; el valor del campo es: ' + document.getElementById("cp").value);
-		
-	}
-	
-	</script>
 
-	
-	@endsection
+
+
+
+
+
+
+
+	</form>
+</body>
+</html>

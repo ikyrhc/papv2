@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Tb_servicios;
+use App\Ctl_cps;
 
-class Tb_serviciosController extends Controller
+class Ctl_cpsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +14,7 @@ class Tb_serviciosController extends Controller
      */
     public function index()
     {
-        $servicios = Tb_servicios::all();
-        
-        return view('guias.listaguias',compact('servicios'));
-            
+        //
     }
 
     /**
@@ -47,10 +44,9 @@ class Tb_serviciosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Guia $os)
+    public function show($id)
     {
-              
-        return view('guias.consultaguia',compact('Guia'));//
+        //
     }
 
     /**
@@ -85,5 +81,23 @@ class Tb_serviciosController extends Controller
     public function destroy($id)
     {
         //
+    }
+	
+	/*  rhc controlador de cps para ver 1 solo cp*/
+	
+	/**
+     * mostrar los datos de, base al cp buscado.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function getCps(Request $request, $cp)
+    {
+         if($request->ajax()){
+			 $cps = Ctl_cps::cp($cp);
+			 return response()->json($cps);
+		 }
+		 
+		 $cp1 = Cps::find($cp);
+                return \View::make('update',compact('cp1'));
     }
 }

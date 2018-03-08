@@ -36,8 +36,7 @@
             <li class='active has-sub'><a>Guías</a>
                 <ul>
                     <li class='has-sub'><a href='/alta_guia'>Abrir Guía</a></li>
-                    <li class='has-sub'><a href='/consguia'>Consulta Guía</a></li>
-                    <li class='has-sub'><a href='#'>Modifica Guía</a></li>
+                    <li class='has-sub'><a href='/busca'>Consulta Guía</a></li>
                     <li class='has-sub'><a href='#'>Modifica Guías Masivamente</a></li>
                     <li class='has-sub'><a href='#'>Consulta Guías Cerradas</a></li>
                 </ul>
@@ -107,6 +106,7 @@
     @yield('content')
 <!--</div>--> 
 
+ @yield('scripts')
 
 </body>
 <html>
