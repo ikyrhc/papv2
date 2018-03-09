@@ -26,11 +26,11 @@ Route::get('dash', function(){
     return view('inicio1');
 });
 
-Route::resource('cp1','Ctl_cpsController');
+//ruta para el ajax de cps traer el edo para generar el ID
 Route::get('cp1/{cp}','Ctl_cpsController@getCps');
 
-//**************************************************************************************************************************
 
+/****************************************************************************************/
 
 //fasv
 Route::get('alra_cl', 'ClientesControl@alra_cl');
@@ -83,10 +83,9 @@ Route::get('busca', function(){
     return view('guias.busca');
 });
 
-Route::get('consguia/{os}', 'Tb_serviciosController@show')
-    ->Where('os')
-    ->name('guias.consultaguia');
-
+Route::get('consguia',function(){
+    return view('guias.consultaguia');
+});
 
 Route::get('hist', function(){
     return view('guias.consultahistorico');
@@ -98,32 +97,16 @@ Route::get('hist', function(){
 Route::resource('track','Tb_TrackController');
 
 
-/* esta ruta hay que eliminarla de el proyecto */
-//Route::get('/usuarios', 'UserController@index');
 
 
 
+/* Rutas para Administrar Catalogos */
 
-/* Rutas de Pruebas */
-
-/*
-Route::get('/gw', function () {
-    return view('welcome');
+Route::get('ctlcp', function(){
+    return view('catalogos.cat_cp');
 });
 
-Route::get('/rastreo', function () {
-    return view('welcome');
-});
+Route::resource('ctlest', 'Ctl_estatusController');
 
-/*
-Route::get('/clientes', function () {
-    //return view('welcome');
-	require __DIR__.'/menuC/index.php';
-});
-*/
-/*
-Route::get('menu', function () {
-    return view('clientes/listaclientes');
-});
-*/
+
 

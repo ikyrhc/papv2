@@ -45,7 +45,7 @@
 		            <td width="150" nowrap="nowrap" class="Etiqueta">Fecha Nac. :</td>
 		            <td width="150"><a href="javascript:NewCssCal ('fe_nac','yyyyMMdd')">
 						<img src="img/cal.gif" width="16" height="16" alt=".."/></a>
-		            	<input type="text" name="fe_nac" size="12" placeholder="aaaa-mm-dd"/></td>
+		            	<input type="text" name="fe_nac" id="fe_nac" size="12" placeholder="aaaa-mm-dd"/></td>
 		            <td width="150" class="Etiqueta">Curp :</td>
 		            <td width="150" colspan="2"><input type="text" name="curp" size="30" placeholder="Ingrese CURP" /></td>
 		            <td width="150" class="Etiqueta">RFC :</td>
@@ -279,9 +279,17 @@
 	{
 		//con esta forma de codificacion se puede integrar a cualuier elemento que se quiera evaluar el enter, es universal cuidado!!
 		tecla = (document.all) ? e.keyCode : e.which;
-		if (tecla==13) alert ('Has pulsado enter; el valor del campo es: ' + document.getElementById("cp").value);
-		
+		if (tecla==13) 
+		{
+			alert ('Has pulsado enter; el valor del campo es: ' + document.getElementById("cp").value + ' -');
+			
+			$.get('cp1/'+event.target.value+"",function(response,state){
+					console.log(response);
+				});
+		};
 	}
+		
+	
 	
 	</script>
 

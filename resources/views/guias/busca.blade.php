@@ -15,7 +15,6 @@
 		</div>
 	@endif
 
-<hr>
 <form action="altaguias_submit" method="get" accept-charset="utf-8">
 	<table width="400" border="0" cellspacing="0" cellpadding="5" align="center" class="Fondo_Tabla" 
         	 style="border-bottom-left-radius:10px; border-bottom-right-radius: 10px; border-top-left-radius: 10px;

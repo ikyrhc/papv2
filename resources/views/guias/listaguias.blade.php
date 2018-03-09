@@ -15,7 +15,7 @@
 	@endif
 
 
-<hr>
+
 <form action="altaguias_submit" method="get" accept-charset="utf-8">
 	<table align="center" width="1200" border="1" cellpadding="5" cellspacing="0" class="Fondo_Tabla" 
 		style="border-bottom-left-radius: 1px; border-bottom-right-radius: 1px; border-top-right-radius: 1px; 
@@ -39,7 +39,7 @@
 			@foreach ($servicios as $servicio)
 			<tr>
 				<td class="Datos_Tablas"></td>
-				<td class="Datos_Tablas"><a href="/{{ $servicio->os }}/consguia">{{ $servicio->os }}</td>
+				<td class="Datos_Tablas"><a href="/consguia">{{ $servicio->os }}</td>
 				<td class="Datos_Tablas">{{ $servicio->fe_alta }}</td>
 				<td class="Datos_Tablas">{{ $servicio->hr_alta }}</td>
 				<td class="Datos_Tablas">{{ $servicio->rmt_nom }}</td>

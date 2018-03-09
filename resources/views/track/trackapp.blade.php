@@ -22,7 +22,7 @@
 		    	onclick="window.open('/c','_self')"/></td>
 		</tr>
 	</table>
-	<hr>	
+	<br>
 	<table width="1000" align="center" cellpadding="7" border="1" cellspacing="0" class="Fondo_Tabla"
 			style="border-top-right-radius: 10px; border-top-left-radius: 10px;">
 		<thead>

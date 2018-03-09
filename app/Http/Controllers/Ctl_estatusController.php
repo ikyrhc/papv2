@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Ctl_cps;
+use App\Ctl_estatus;
 
-class Ctl_cpsController extends Controller
+class Ctl_estatusController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,10 @@ class Ctl_cpsController extends Controller
      */
     public function index()
     {
-        //
+        //catalogos.cat_estatus
+        $Estatus = Ctl_estatus::all();
+        
+        return view('catalogos.cat_estatus',compact('Estatus'));
     }
 
     /**
@@ -81,24 +84,5 @@ class Ctl_cpsController extends Controller
     public function destroy($id)
     {
         //
-    }
-	
-	/*  rhc controlador de cps para ver 1 solo cp*/
-	
-	/**
-     * mostrar los datos de, base al cp buscado.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function getCps(Request $request, $cp)
-    {
-         if($request->ajax()){
-			 $cps = Ctl_cps::cp($cp);
-			 return response()->json($cps);
-		 }
-		 /*
-		 $cp1 = Cps::find($cp);
-                return \View::make('update',compact('cp1'));
-				*/
     }
 }

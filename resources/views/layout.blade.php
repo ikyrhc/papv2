@@ -6,9 +6,11 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    
 
-   <script src="js/jquery-latest.js" type="text/javascript"></script>
+   <script src="{{ asset('js/jquery-latest.js') }}" type="text/javascript"></script>
+   <script src="{{ asset('js/datetimepicker_css.js') }}" type="text/javascript"></script>
    <!-- <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> -->
-   <script src="js/script.js"></script>
+   <script src="{{ asset('js/script.js') }}"></script>
+   <script src="{{ asset('js/valida_campos.js') }}"></script>
    
    <title>PAP - @yield('title')</title>
 
@@ -22,7 +24,7 @@
 
 <body>
 <div>
-    <img src="img/pap.png" alt="No Hay Imagen" class="imagen" />
+    <img src="img/pap.png" alt="No Hay Imagen" class="imagen"  width="240" height="117" />
 </div>
 
 <div id='cssmenu'>
@@ -90,9 +92,9 @@
             </li>
             <li class='has-sub'><a>Catalogos</a>
                 <ul>
-                    <li class='has-sub'><a href='#'>Códigos Postales</a></li>
-                    <li class='has-sub'><a href='#'>Estatus</a></li>
-                    <li class='has-sub'><a href='#'>Zonas</a></li>
+                    <li class='has-sub'><a href='/ctlcp'>Códigos Postales</a></li>
+                    <li class='has-sub'><a href='/ctlest'>Estatus</a></li>
+                <!--    <li class='has-sub'><a href='#'>Zonas</a></li> -->
                 </ul>
             </li>
             <li><a href='/track'>Auditoria</a></li>
@@ -102,11 +104,13 @@
     </ul>
 
 </div>
+
+<hr>
 <!-- <div id="container1"> -->
     @yield('content')
 <!--</div>--> 
 
- @yield('scripts')
+	@yield('scripts')
 
 </body>
 <html>

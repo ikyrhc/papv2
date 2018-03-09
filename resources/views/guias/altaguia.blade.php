@@ -125,18 +125,24 @@
 				<tr>
 					<td width="130" nowrap="nowrap" class="Etiqueta">No Ext/Int :</td>
 					<td align="center">
-						<input type="text" name="no_ext" size="4" placeholder="000" readonly title="Numero Exterior" /> | 
-						<input type="text" name="no_int" size="4" placeholder="000" readonly title="Numero Interior" /> </td>
+						<input type="text" name="no_ext" size="4" placeholder="000" readonly title="Numero Exterior"
+						onkeypress="return SoloNumeros(event);" maxlength="6" /> | 
+						<input type="text" name="no_int" size="4" placeholder="000" readonly title="Numero Interior"
+						onkeypress="return SoloNumeros(event);" maxlength="6" /> </td>
 					<td width="100" nowrap="nowrap" class="Etiqueta">C.P. :</td>
 					<td align="center">
-						<input type="text" name="cp" size="6" readonly placeholder="00000"/></td>
+						<input type="text" name="cp" size="6" readonly placeholder="00000" 
+						onkeypress="return SoloNumeros(event);" maxlength="5" /></td>
 					<td width="130" nowrap="nowrap" class="Etiqueta">No Ext/Int :</td>
 					<td align="center">
-						<input type="text" name="no_ext" size="4" placeholder="000" title="Numero Exterior" /> | 
-						<input type="text" name="no_int" size="4" placeholder="000" title="Numero Interior" /> </td>
+						<input type="text" name="no_ext" size="4" placeholder="000" title="Numero Exterior"
+						onkeypress="return SoloNumeros(event);" maxlength="6" /> | 
+						<input type="text" name="no_int" size="4" placeholder="000" title="Numero Interior"
+						onkeypress="return SoloNumeros(event);" maxlength="6" /> </td>
 					<td width="100" nowrap="nowrap" class="Etiqueta">C.P. :</td>
 					<td align="center">
-						<input type="text" name="cp" size="6" placeholder="00000" title="Presiona Enter Para Validar"/></td>
+						<input type="text" name="cp" size="6" placeholder="00000" title="Presiona Enter Para Validar"
+						onkeypress="return SoloNumeros(event);" maxlength="5" /></td>
 				</tr>
 				<tr>
 				    <td width="100" nowrap="nowrap" class="Etiqueta">Colonia :</td>
@@ -180,13 +186,13 @@
 				</tr>
 				<tr>
 					<td width="100" nowrap="nowrap" class="Etiqueta">Teléfono :</td>
-					<td><input type="text" name="rtm_tel" id="rtm_tel" size="18" readonly="readonly" tabindex="-1" placeholder="5555555555" maxlength="15" /></td>
+					<td><input type="text" name="rtm_tel" id="rtm_tel" size="18" readonly="readonly" tabindex="-1" placeholder="5555555555" maxlength="15" onkeypress="return SoloNumeros(event);"/></td>
 					<td width="100" nowrap="nowrap" class="Etiqueta">Celular :</td>
-					<td><input type="text" name="rtm_cel" id="rtm_cel" size="18" readonly="readonly" tabindex="-1" placeholder="5555555555" maxlength="15" /></td>
+					<td><input type="text" name="rtm_cel" id="rtm_cel" size="18" readonly="readonly" tabindex="-1" placeholder="5555555555" maxlength="15" onkeypress="return SoloNumeros(event);" /></td>
 					<td width="100" nowrap="nowrap" class="Etiqueta">Teléfono :</td>
-					<td><input type="text" name="des_tel" id="des_tel" size="18" readonly="readonly" tabindex="-1" placeholder="5555555555" maxlength="15" /></td>
+					<td><input type="text" name="des_tel" id="des_tel" size="18" readonly="readonly" tabindex="-1" placeholder="5555555555" maxlength="15" onkeypress="return SoloNumeros(event);" /></td>
 					<td width="100" nowrap="nowrap" class="Etiqueta">Celular :</td>
-					<td><input type="text" name="des_cel" id="des_cel" size="18" readonly="readonly" tabindex="-1" placeholder="5555555555" maxlength="15" /></td>
+					<td><input type="text" name="des_cel" id="des_cel" size="18" readonly="readonly" tabindex="-1" placeholder="5555555555" maxlength="15" onkeypress="return SoloNumeros(event);" /></td>
 				</tr>
 				<tr>
 					<td width="100" nowrap="nowrap" class="Etiqueta">Hora Recolección :</td>
@@ -223,21 +229,28 @@
 				</tr>
 				<tr>
 					<td width="100" nowrap="nowrap" class="Etiqueta">Piezas :</td>
-					<td><input type="text" name="pzas" id="pzas" value="" placeholder="1" size="18"></td>
+					<td><input type="text" name="pzas" id="pzas" value="" placeholder="1" size="18"
+						onkeypress="return SoloNumeros(event);" maxlength="4"></td>
 					<td width="100" nowrap="nowrap" class="Etiqueta">Peso :</td>
-					<td><input type="text" name="peso" id="peso" value="" placeholder="1" size="18"></td>
+					<td><input type="text" name="peso" id="peso" value="" placeholder="1" size="18"
+						onkeypress="return SoloNumeros(event);" maxlength="4"></td>
 					<td width="100" nowrap="nowrap" class="Etiqueta">Peso Amparado :</td>
-					<td><input type="text" name="peso_amp" id="peso_amp" value="" placeholder="1" size="18"></td>
+					<td><input type="text" name="peso_amp" id="peso_amp" value="" placeholder="1" size="18"
+						onkeypress="return SoloNumeros(event);" maxlength="4"></td>
 				</tr>				
 				<tr>
 					<td width="100" nowrap="nowrap" class="Etiqueta">Alto :</td>
-					<td><input type="text" name="alto" id="alto" value="" placeholder="0" size="18"></td>
+					<td><input type="text" name="alto" id="alto" value="" placeholder="0" size="18"
+						onkeypress="return SoloNumeros(event);" maxlength="4"></td>
 					<td width="100" nowrap="nowrap" class="Etiqueta">Ancho :</td>
-					<td><input type="text" name="ancho" id="ancho" value="" placeholder="0" size="18"></td>
+					<td><input type="text" name="ancho" id="ancho" value="" placeholder="0" size="18"
+						onkeypress="return SoloNumeros(event);" maxlength="4"></td>
 					<td width="100" nowrap="nowrap" class="Etiqueta">Largo :</td>
-					<td><input type="text" name="largo" id="largo" value="" placeholder="0" size="18"></td>
+					<td><input type="text" name="largo" id="largo" value="" placeholder="0" size="18"
+						onkeypress="return SoloNumeros(event);" maxlength="4"></td>
 					<td width="100" nowrap="nowrap" class="Etiqueta">Peso Vol. :</td>
-					<td><input type="text" name="peso_vol" id="peso_vol" value="" placeholder="0" size="18"></td>
+					<td><input type="text" name="peso_vol" id="peso_vol" value="" placeholder="0" size="18"
+						onkeypress="return SoloNumeros(event);" maxlength="4"></td>
 				</tr>				
                 <tr>
                     <td width="100" nowrap="nowrap" class="Etiqueta">Tipo de Servicio :</td>
@@ -266,9 +279,11 @@
                 	<td width="100" nowrap="nowrap" class="Etiqueta">Guía Externa :</td>
                 	<td><input type="text" name="g_externa" id="g_externa" placeholder="12345678912345" size="18"></td>
                 	<td width="100" nowrap="nowrap" class="Etiqueta">Valor COD :</td>
-			    	<td><input type="text" name="vcod" id="vcod" placeholder="0" size="18"></td>
+			    	<td><input type="text" name="vcod" id="vcod" placeholder="0" size="18"
+			    		onkeypress="return SoloNumeros(event);" maxlength="6"></td>
 			    	<td width="100" nowrap="nowrap" class="Etiqueta">Costo :</td>
-			    	<td><input type="text" name="costo" id="costo" placeholder="0" size="18"></td>
+			    	<td><input type="text" name="costo" id="costo" placeholder="0" size="18"
+			    		onkeypress="return SoloNumeros(event);" maxlength="6"></td>
                 </tr>
                 <tr>
                 	<td width="100" nowrap="nowrap" class="Etiqueta">Origen :</td>
@@ -282,7 +297,8 @@
                     	<!-- Aqui Hay que poner codigo para que muestre y llene los combos -->
 			    		</select></td>
                 	<td width="100" nowrap="nowrap" class="Etiqueta">Costo Adicional :</td>
-			    	<td><input type="text" name="c_adic" id="c_adic" placeholder="0" size="18"></td>
+			    	<td><input type="text" name="c_adic" id="c_adic" placeholder="0" size="18"
+			    		onkeypress="return SoloNumeros(event);" maxlength="6"></td>
 			    	<td width="100" nowrap="nowrap" class="Etiqueta">Forma Pago :</td>
                     <td><select name="f_pago" id="f_pago" tabindex="-1">
                		  	<option value="--">Seleccione</option>
@@ -303,9 +319,11 @@
 					<td><input type="text" name="fe_recole" id="fe_recole" placeholder="2018-03-01" size="9" readonly="readonly" tabindex="-1">
 						<input type="text" name="hr_recole" id="hr_recole" placeholder="18:45" size="4"></td>
 					<td width="100" nowrap="nowrap" class="Etiqueta">Valor Declarado :</td>
-			    	<td><input type="text" name="val_dec" id="val_dec" placeholder="0" size="18"></td>
+			    	<td><input type="text" name="val_dec" id="val_dec" placeholder="0" size="18"
+			    		onkeypress="return SoloNumeros(event);" maxlength="6"></td>
 			    	<td width="100" nowrap="nowrap" class="Etiqueta">Seguro :</td>
-			    	<td><input type="text" name="seguro" id="seguro" placeholder="0" size="18"></td>
+			    	<td><input type="text" name="seguro" id="seguro" placeholder="0" size="18"
+			    		onkeypress="return SoloNumeros(event);" maxlength="10"></td>
 				</tr>
 				<tr>
 					<td rowspan="2" width="100" nowrap="nowrap" class="Etiqueta">Historial :</td>

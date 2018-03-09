@@ -13,7 +13,7 @@ class CreateCtlEstatusTable extends Migration
      */
     public function up()
     {
-        Schema::create('ctl_estatus', function (Blueprint $table) {
+        Schema::create('ctl_estatuses', function (Blueprint $table) {
             $table->increments('id');
             $table->string('estatus', 15)->comment('Estaus');
             $table->string('sub_est', 20)->comment('Sub Estaus');
@@ -29,6 +29,6 @@ class CreateCtlEstatusTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ctl_estatus');
+        Schema::dropIfExists('ctl_estatuses');
     }
 }
